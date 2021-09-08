@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/facts", to:"facts#index"
+    put "/facts/:id", to:"facts#rate"
   end
 end
 
